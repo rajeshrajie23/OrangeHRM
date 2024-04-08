@@ -7,6 +7,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -37,6 +38,12 @@ public class BrowserConfiguration {
 				WebDriverManager.chromedriver().setup();
 				d= new EdgeDriver();
 			}
+			else 
+			    if(BrowserName.equalsIgnoreCase("firefox"))
+				{
+					WebDriverManager.firefoxdriver().setup();
+					d=new FirefoxDriver();
+				}
 		d.get(url);
 		d.manage().window().maximize();
 		return d;
