@@ -5,11 +5,12 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.orange.Pages.AddUser;
 
-
+@Listeners(com.orange.smoke.ListenersClass.class)
 
 public class CreateUser extends AddUser{
     
