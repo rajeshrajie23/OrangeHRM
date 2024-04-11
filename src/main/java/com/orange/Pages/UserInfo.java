@@ -10,7 +10,7 @@ public class UserInfo extends LoginPage{
     protected By user_role_btn = By.xpath("(//div[contains(text(),'-- Select --')])[1]");
     protected By user_role_options = By.xpath("//div[@class=\"oxd-select-option\"]/span");
     protected By employee_name = By.xpath("//input[@placeholder='Type for hints...']");
-    protected By status_btn = By.xpath("//div[@class='oxd-select-text oxd-select-text--active']");
+    protected By status_btn = By.xpath("(//div[@class='oxd-select-text oxd-select-text--active'])[2]");
     protected By status_options = By.xpath("//div[@class=\"oxd-select-option\"]/span");
     protected By search_btn = By.xpath("//button[normalize-space()='Search']");
     protected By reset_btn = By.xpath("//button[normalize-space()='Reset']");

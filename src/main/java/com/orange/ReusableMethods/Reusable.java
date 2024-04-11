@@ -34,7 +34,7 @@ public class Reusable extends BrowserConfiguration {
         d.manage().timeouts().implicitlyWait(Duration.ofSeconds(delay));
     }
 
-    void ExplicitWait(By element,int delay)
+    protected void ExplicitWait(By element,int delay)
     {
         WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(delay));
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
