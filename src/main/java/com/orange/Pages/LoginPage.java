@@ -6,13 +6,15 @@ import com.orange.ReusableMethods.Reusable;
 
 public class LoginPage extends Reusable {
 
-    protected By loginText = By.xpath("//h5[normalize-space()='Login']");
+    protected By loginText = By.cssSelector(".orangehrm-login-title");
     protected By dashboardText = By.xpath("//h6[normalize-space()='Dashboard']");
-    protected By uname = By.xpath("//input[@placeholder='Username']");
-    protected By pword = By.xpath("//input[@placeholder='Password']");
-    protected By login_btn = By.xpath("//button[@type='submit']");
-    protected By drpDwn = By.xpath("//span[@class='oxd-userdropdown-tab']");
+    protected By uname = By.cssSelector("input[name=\"username\"]");
+    protected By pword = By.cssSelector("input[name=\"password\"]");
+    protected By login_btn = By.cssSelector("button.orangehrm-login-button");
+    protected By drpDwn = By.cssSelector("span.oxd-userdropdown-tab");
     protected By logout_btn = By.xpath("//a[normalize-space()='Logout']");
+    protected By login_error = By.cssSelector("p.oxd-alert-content-text");
+
 
     protected void LoginToOrange(String username,String password)
     {
