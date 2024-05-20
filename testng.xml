@@ -3,7 +3,7 @@
 <suite name="smoke">
 	<test thread-count="5" name="test">
 		<classes>
-			<class name="smoke.OrangeLogin"/>
+			<class name="com.orange.smoke.OrangeLogin"/>
 		</classes>
 	</test>
 </suite>
