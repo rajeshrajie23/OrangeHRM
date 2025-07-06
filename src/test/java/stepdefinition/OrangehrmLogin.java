@@ -2,7 +2,7 @@ package stepdefinition;
 
 import java.io.IOException;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.orange.Pages.LoginPage;
 

@@ -1,6 +1,6 @@
 package stepdefinition;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import com.orange.Pages.UserInfo;
 
